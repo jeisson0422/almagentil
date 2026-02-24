@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociación Alma Gentil - Donar</title>
+    <meta name="description"
+        content="Tu donación transforma la vida de la niñez costarricense. Apoya nuestros programas a través de SINPE Móvil o transferencia bancaria.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body class="bg-warm-white text-primary-black font-sans antialiased selection:bg-primary-gold selection:text-white">
+
+    <!-- Navbar -->
+    <header
+        class="fixed w-full top-0 z-50 bg-primary-black/95 backdrop-blur-md border-b border-white/10 transition-all duration-300"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/" class="flex items-center gap-3 group">
+                        <img src="/assets/images/redondo.png" alt="Alma Gentil Logo"
+                            class="h-12 w-auto transition-transform duration-300 group-hover:scale-105">
+                        <span class="font-bold text-xl tracking-tight hidden sm:block text-white">Alma Gentil</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html"
+                        class="text-gray-300 hover:text-primary-gold font-medium transition-colors">Inicio</a>
+                    <a href="about.html"
+                        class="text-gray-300 hover:text-primary-gold font-medium transition-colors">Quiénes Somos</a>
+                    <a href="programs.html"
+                        class="text-gray-300 hover:text-primary-gold font-medium transition-colors">Programas</a>
+                    <a href="donate.html" class="text-primary-gold font-semibold transition-colors">Donar</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-btn"
+                        class="text-gray-300 hover:text-primary-gold focus:outline-none p-2" aria-label="Abrir menú">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-primary-black border-t border-white/10 shadow-xl absolute w-full left-0 origin-top transform transition-all duration-300 opacity-0 scale-y-0">
+            <div class="px-4 py-4 space-y-3 flex flex-col">
+                <a href="index.html"
+                    class="block px-3 py-2 text-gray-300 hover:text-primary-gold font-medium hover:bg-white/5 rounded-lg transition-colors">Inicio</a>
+                <a href="about.html"
+                    class="block px-3 py-2 text-gray-300 hover:text-primary-gold font-medium hover:bg-white/5 rounded-lg transition-colors">Quiénes
+                    Somos</a>
+                <a href="programs.html"
+                    class="block px-3 py-2 text-gray-300 hover:text-primary-gold font-medium hover:bg-white/5 rounded-lg transition-colors">Programas</a>
+                <a href="donate.html"
+                    class="block px-3 py-2 text-primary-gold font-medium bg-white/5 rounded-lg">Donar</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Page Header -->
+        <section class="bg-primary-black text-white py-24 md:py-32 relative overflow-hidden">
+            <!-- Decorative Elements -->
+            <div class="absolute inset-0 opacity-20">
+                <div
+                    class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center mix-blend-overlay">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-primary-black to-transparent"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 animate-fade-in-up">
+                <div
+                    class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary-gold/20 text-primary-gold mb-8 animate-pulse-slow">
+                    <i class="fas fa-heart text-4xl"></i>
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold mb-6">Tu ayuda <span
+                        class="text-primary-gold">transforma vidas</span></h1>
+                <p class="text-xl md:text-2xl text-gray-300 font-light max-w-2xl mx-auto leading-relaxed">
+                    Gracias por ser parte activa de este cambio. Tu generosidad se convierte en alimento, educación y
+                    esperanza.
+                </p>
+            </div>
+        </section>
+
+        <!-- Donation Options -->
+        <section class="py-24 bg-light-cream relative">
+            <!-- Background Decoration -->
+            <div class="absolute top-0 w-full h-1/2 bg-primary-black/5 rounded-b-[100px] -z-0"></div>
+
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+
+                    <!-- Bank Transfer Card -->
+                    <div
+                        class="bg-white rounded-3xl p-8 lg:p-12 shadow-xl border-t-8 border-primary-gold flex flex-col hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div
+                                class="w-14 h-14 rounded-full bg-primary-gold/10 text-primary-gold flex items-center justify-center text-2xl">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <h2 class="text-2xl lg:text-3xl font-bold text-primary-black">Transferencia Bancaria</h2>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-2xl p-6 mb-8 border border-gray-100 flex-grow">
+                            <div class="flex items-center justify-between mb-4">
+                                <img src="/assets/images/bcr.png" alt="Banco de Costa Rica"
+                                    class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity">
+                            </div>
+                            <div class="mb-4">
+                                <p class="text-sm text-gray-500 font-medium uppercase tracking-wider mb-1">IBAN Colones
+                                </p>
+                                <div
+                                    class="flex items-center justify-between bg-white rounded-xl py-3 px-4 border border-gray-200">
+                                    <span
+                                        class="font-mono text-lg md:text-xl font-bold text-primary-black tracking-widest break-all">CR92015201001051615846</span>
+                                    <button
+                                        class="text-primary-gold hover:text-yellow-600 transition-colors tooltip-wrapper"
+                                        aria-label="Copiar cuenta"
+                                        onclick="navigator.clipboard.writeText('CR92015201001051615846')">
+                                        <i class="far fa-copy text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="mt-8 pt-6 border-t border-gray-200">
+                                <p class="text-xs text-gray-500 font-medium uppercase tracking-wider mb-2">Titular de la
+                                    cuenta</p>
+                                <p class="font-bold text-primary-black text-lg">Asociación Alma Gentil</p>
+                                <p class="text-sm text-gray-600 mt-1">Cédula Jurídica: 3-002-954647</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto">
+                            <p class="text-sm text-gray-500 font-medium mb-3">Próximamente disponible en:</p>
+                            <div class="flex gap-4 items-center">
+                                <img src="/assets/images/davivienda.png" alt="Davivienda"
+                                    class="h-8 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                                <img src="/assets/images/bac.png" alt="BAC Credomatic"
+                                    class="h-8 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SINPE Móvil Card -->
+                    <div
+                        class="bg-primary-black rounded-3xl p-8 lg:p-12 shadow-xl border-t-8 border-primary-gold flex flex-col text-white hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden">
+                        <div class="absolute topRight opacity-5 pointer-events-none">
+                            <i class="fas fa-mobile-alt text-[200px]"></i>
+                        </div>
+
+                        <div class="flex items-center gap-4 mb-8 relative z-10">
+                            <div
+                                class="w-14 h-14 rounded-full bg-white/10 text-primary-gold flex items-center justify-center text-2xl">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h2 class="text-2xl lg:text-3xl font-bold text-white">SINPE Móvil</h2>
+                        </div>
+
+                        <div
+                            class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 lg:p-10 text-center border border-white/10 flex-grow flex flex-col justify-center relative z-10 shadow-inner">
+                            <p class="text-sm text-gray-400 font-medium uppercase tracking-widest mb-4">Envía tu
+                                donación al</p>
+                            <div class="inline-block relative">
+                                <p class="text-5xl lg:text-6xl font-black text-primary-gold tracking-tight mb-2">
+                                    7008-4892</p>
+                                <button class="absolute -right-8 top-1 text-gray-400 hover:text-white transition-colors"
+                                    onclick="navigator.clipboard.writeText('70084892')">
+                                    <i class="far fa-copy text-xl"></i>
+                                </button>
+                            </div>
+                            <div class="w-12 h-1 bg-white/20 mx-auto rounded-full my-6"></div>
+                            <p class="text-lg text-gray-300 font-light">A nombre de: <strong
+                                    class="text-white font-semibold">Asociación Alma Gentil</strong></p>
+                        </div>
+
+                        <div class="mt-6 flex items-start gap-3 bg-white/10 p-4 rounded-xl relative z-10">
+                            <i class="fas fa-info-circle text-primary-gold mt-1"></i>
+                            <p class="text-sm text-gray-300 leading-relaxed font-light">
+                                Por favor indicar la palabra <strong class="text-white">"Donación"</strong> en el
+                                detalle de la transferencia para mantener el registro contable.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Transparency Note -->
+        <section class="py-20 bg-white">
+            <div
+                class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-gray-50 rounded-3xl p-10 lg:p-16 border border-gray-100 shadow-sm relative">
+                <div
+                    class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center text-primary-gold text-2xl">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-6 text-primary-black">Nuestro Compromiso de Transparencia</h3>
+                <p class="text-gray-600 text-lg leading-relaxed font-light mb-8">
+                    En Asociación Alma Gentil valoramos profundamente su confianza y sacrificio. Todas las donaciones
+                    son registradas meticulosamente y utilizadas estrictamente para nuestros programas sociales activos.
+                </p>
+                <div class="inline-block bg-primary-gold/10 px-6 py-4 rounded-xl">
+                    <p class="text-primary-black font-medium">
+                        ¿Requiere un recibo deducible de impuestos?<br>
+                        <span class="text-sm text-gray-600 mt-2 block font-normal">Envíe su comprobante a: <a
+                                href="mailto:contacto@almagentil.org"
+                                class="text-primary-gold font-bold hover:underline">contacto@almagentil.org</a></span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-black border-t border-white/10 text-white pt-16 pb-8 mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Branding -->
+                <div class="col-span-1 lg:col-span-1">
+                    <img src="/assets/images/redondo.png" alt="Alma Gentil Logo" class="h-16 w-auto mb-6">
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Trabajando por un futuro mejor y lleno de oportunidades para la niñez costarricense. Su apoyo es
+                        nuestra fuerza.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 shadow-sm border border-white/5 flex items-center justify-center text-primary-gold hover:bg-primary-gold hover:text-white transition-all duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 shadow-sm border border-white/5 flex items-center justify-center text-primary-gold hover:bg-primary-gold hover:text-white transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 shadow-sm border border-white/5 flex items-center justify-center text-primary-gold hover:bg-primary-gold hover:text-white transition-all duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="font-bold text-white mb-6 uppercase tracking-wider text-sm">Enlaces Rápidos</h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html"
+                                class="text-gray-300 hover:text-primary-gold transition-colors">Inicio</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-primary-gold transition-colors">Quiénes
+                                Somos</a></li>
+                        <li><a href="programs.html"
+                                class="text-gray-300 hover:text-primary-gold transition-colors">Nuestros Programas</a>
+                        </li>
+                        <li><a href="donate.html" class="text-gray-300 hover:text-primary-gold transition-colors">Quiero
+                                Donar</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-span-1 lg:col-span-2">
+                    <h4 class="font-bold text-white mb-6 uppercase tracking-wider text-sm">Contáctenos</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-4">
+                                <i class="fas fa-map-marker-alt text-primary-gold mt-1"></i>
+                                <span class="text-gray-300">Alajuela, Costa Rica<br>Oficinas Centrales</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <i class="fas fa-envelope text-primary-gold"></i>
+                                <a href="mailto:contacto@almagentil.org"
+                                    class="text-gray-300 hover:text-primary-gold transition-colors">contacto@almagentil.org</a>
+                            </li>
+                        </ul>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-4">
+                                <i class="fas fa-phone text-primary-gold"></i>
+                                <a href="tel:+50640347205"
+                                    class="text-gray-300 hover:text-primary-gold transition-colors">+506 4034-7205</a>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <i class="fab fa-whatsapp text-primary-gold"></i>
+                                <a href="https://wa.me/50670084892"
+                                    class="text-gray-300 hover:text-primary-gold transition-colors">+506 7008-4892</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2024 Asociación Alma Gentil. Todos los derechos reservados.
+                </p>
+                <div class="flex gap-6 text-sm">
+                    <a href="#" class="text-gray-400 hover:text-primary-gold transition-colors">Políticas de
+                        Privacidad</a>
+                    <a href="#" class="text-gray-400 hover:text-primary-gold transition-colors">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module">
+        // Mobile Menu Toggle Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const icon = btn.querySelector('i');
+
+            let isMenuOpen = false;
+
+            btn.addEventListener('click', () => {
+                isMenuOpen = !isMenuOpen;
+
+                if (isMenuOpen) {
+                    menu.classList.remove('hidden');
+                    // Small delay to allow display flex to apply before transition
+                    setTimeout(() => {
+                        menu.classList.remove('opacity-0', 'scale-y-0');
+                        menu.classList.add('opacity-100', 'scale-y-100');
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    }, 10);
+                } else {
+                    menu.classList.remove('opacity-100', 'scale-y-100');
+                    menu.classList.add('opacity-0', 'scale-y-0');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+
+                    // Wait for transition to finish before hiding element
+                    setTimeout(() => {
+                        menu.classList.add('hidden');
+                    }, 300);
+                }
+            });
+
+            // Navbar background effect on scroll
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    navbar.classList.add('shadow-md');
+                } else {
+                    navbar.classList.remove('shadow-md');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asociación Alma Gentil - Inicio</title>
+  <meta name="description"
+    content="Apoyamos a niños en situación vulnerable a través de alimentación, educación y esperanza.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body class="bg-warm-white text-primary-black font-sans antialiased selection:bg-primary-gold selection:text-white">
+
+  <!-- Navbar -->
+  <header
+    class="fixed w-full top-0 z-50 bg-primary-black/95 backdrop-blur-md border-b border-white/10 transition-all duration-300"
+    id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <a href="/" class="flex items-center gap-3 group">
+            <img src="https://almagentil.org/assets/images/redondo.png" alt="Alma Gentil Logo"
+              class="h-12 w-auto transition-transform duration-300 group-hover:scale-105">
+            <span class="font-bold text-xl tracking-tight hidden sm:block text-white">Alma Gentil</span>
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-8 items-center">
+          <a href="index.html" class="text-primary-gold font-semibold transition-colors">Inicio</a>
+          <a href="about.html" class="text-gray-300 hover:text-primary-gold font-medium transition-colors">Quiénes
+            Somos</a>
+          <a href="programs.html"
+            class="text-gray-300 hover:text-primary-gold font-medium transition-colors">Programas</a>
+          <a href="donate.html"
+            class="px-5 py-2.5 rounded-full bg-primary-gold text-white font-semibold hover:bg-yellow-600 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">Donar</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center md:hidden">
+          <button type="button" id="mobile-menu-btn"
+            class="text-gray-300 hover:text-primary-gold focus:outline-none p-2" aria-label="Abrir menú">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu"
+      class="hidden md:hidden bg-primary-black border-t border-white/10 shadow-xl absolute w-full left-0 origin-top transform transition-all duration-300 opacity-0 scale-y-0">
+      <div class="px-4 py-4 space-y-3 flex flex-col">
+        <a href="index.html" class="block px-3 py-2 text-primary-gold font-medium bg-white/5 rounded-lg">Inicio</a>
+        <a href="about.html"
+          class="block px-3 py-2 text-gray-300 hover:text-primary-gold font-medium hover:bg-white/5 rounded-lg transition-colors">Quiénes
+          Somos</a>
+        <a href="programs.html"
+          class="block px-3 py-2 text-gray-300 hover:text-primary-gold font-medium hover:bg-white/5 rounded-lg transition-colors">Programas</a>
+        <a href="donate.html"
+          class="block px-3 py-3 text-center rounded-lg bg-primary-gold text-white font-semibold hover:bg-yellow-600 transition-colors mt-4">Donar
+          Ahora</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="relative h-screen flex items-center justify-center pt-20 overflow-hidden">
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+          alt="Niños" class="w-full h-full object-cover object-center animate-subtle-zoom">
+        <div class="absolute inset-0 bg-black/60"></div>
+      </div>
+
+      <!-- Content -->
+      <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        <span
+          class="inline-block py-1 px-3 rounded-full bg-primary-gold/20 text-primary-gold text-sm font-semibold tracking-wider mb-6 border border-primary-gold/30 uppercase animate-fade-in-up"
+          style="animation-delay: 0.1s">Asociación Alma Gentil</span>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up"
+          style="animation-delay: 0.2s">
+          Transformamos la <span class="text-primary-gold">solidaridad</span> en oportunidades reales
+        </h1>
+        <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light leading-relaxed animate-fade-in-up"
+          style="animation-delay: 0.3s">
+          Brindamos alimentación, útiles escolares y apoyo educativo a niños en situación vulnerable.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style="animation-delay: 0.4s">
+          <a href="donate.html"
+            class="px-8 py-4 rounded-full bg-primary-gold text-white font-semibold text-lg hover:bg-yellow-600 hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:-translate-y-1 transition-all duration-300">Apoyar
+            la causa</a>
+          <a href="about.html"
+            class="px-8 py-4 rounded-full bg-white/10 text-white font-semibold text-lg backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:-translate-y-1 transition-all duration-300">Conocer
+            más</a>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+        <a href="#impacto" class="text-white/70 hover:text-white transition-colors">
+          <i class="fas fa-chevron-down text-2xl"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Nuestro Impacto -->
+    <section id="impacto" class="py-24 bg-light-cream relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestro Impacto</h2>
+          <div class="w-16 h-1 bg-primary-gold mx-auto rounded-full mb-6"></div>
+          <p class="text-gray-600 text-lg">Trabajamos incansablemente guiados por tres pilares fundamentales para el
+            desarrollo integral de la niñez.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+            <div
+              class="h-16 w-16 bg-primary-gold/10 rounded-2xl flex items-center justify-center mb-6 text-primary-gold group-hover:bg-primary-gold group-hover:text-white transition-colors duration-300">
+              <i class="fas fa-utensils text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Alimentación</h3>
+            <p class="text-gray-600 leading-relaxed">Proveemos alimentos nutritivos a comedores infantiles y familias en
+              permanente riesgo social, garantizando su desarrollo físico y cognitivo.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+            <div
+              class="h-16 w-16 bg-primary-gold/10 rounded-2xl flex items-center justify-center mb-6 text-primary-gold group-hover:bg-primary-gold group-hover:text-white transition-colors duration-300">
+              <i class="fas fa-book-reader text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Educación</h3>
+            <p class="text-gray-600 leading-relaxed">Entregamos bultos y útiles escolares y brindamos tutorías
+              personalizadas para combatir la deserción escolar en zonas vulnerables.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+            <div
+              class="h-16 w-16 bg-primary-gold/10 rounded-2xl flex items-center justify-center mb-6 text-primary-gold group-hover:bg-primary-gold group-hover:text-white transition-colors duration-300">
+              <i class="fas fa-hands-helping text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Comunidad</h3>
+            <p class="text-gray-600 leading-relaxed">Fomentamos valores integrales y redes de apoyo mutuo para
+              fortalecer el tejido social y la resiliencia comunitaria.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cómo Puedes Ayudar -->
+    <section class="py-24 bg-white relative overflow-hidden">
+      <!-- Decorative shape -->
+      <div
+        class="absolute right-0 top-0 w-1/3 h-full bg-primary-gold/5 -skew-x-12 origin-top-right transform translate-x-20 hidden lg:block">
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div class="order-2 lg:order-1 relative">
+            <div
+              class="absolute -inset-4 bg-primary-gold/20 rounded-3xl transform rotate-3 scale-105 blur-lg opacity-50">
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="Niños felices en la escuela" class="relative rounded-2xl shadow-2xl object-cover w-full h-[500px]">
+
+            <!-- Floating badge -->
+            <div
+              class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl flex items-center gap-4 animate-bounce-slow">
+              <div class="bg-green-100 text-green-600 p-3 rounded-full">
+                <i class="fas fa-heart text-xl"></i>
+              </div>
+              <div>
+                <p class="text-sm text-gray-500 font-medium">Únete a nosotros</p>
+                <p class="font-bold text-gray-900">Haz la diferencia hoy</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-1 lg:order-2">
+            <span class="text-primary-gold font-bold tracking-wider uppercase text-sm mb-2 block">Participa</span>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Cómo puedes ayudar</h2>
+            <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+              Tu aporte es fundamental para continuar nuestra labor. Cada acción, por pequeña que sea, se convierte
+              directamente en bienestar, esperanza y futuro para un niño que lo necesita.
+            </p>
+
+            <div class="space-y-6 mb-10">
+              <div class="flex items-start gap-4">
+                <div class="mt-1 bg-primary-gold/10 p-2 rounded-full text-primary-gold shrink-0">
+                  <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg">Donaciones Monetarias o en Especie</h4>
+                  <p class="text-gray-600">Aportes que financian comedores, materiales educativos y proyectos
+                    especiales.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="mt-1 bg-primary-gold/10 p-2 rounded-full text-primary-gold shrink-0">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg">Voluntariado</h4>
+                  <p class="text-gray-600">Dona tu tiempo y talento participando en nuestros eventos y actividades de
+                    tutoría.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="mt-1 bg-primary-gold/10 p-2 rounded-full text-primary-gold shrink-0">
+                  <i class="fas fa-handshake"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg">Alianzas Corporativas</h4>
+                  <p class="text-gray-600">Involucra a tu empresa en programas de responsabilidad social empresarial con
+                    impacto real.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="donate.html"
+              class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary-black text-white font-semibold hover:bg-gray-800 hover:-translate-y-1 transition-all duration-300">
+              Quiero Donar Ahora
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confianza y Compromiso -->
+    <section class="py-24 bg-primary-black text-white relative overflow-hidden">
+      <!-- Background Elements -->
+      <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10">
+        <div class="absolute w-[500px] h-[500px] bg-primary-gold rounded-full blur-[100px] -top-[250px] -right-[250px]">
+        </div>
+        <div
+          class="absolute w-[300px] h-[300px] bg-primary-gold rounded-full blur-[80px] -bottom-[150px] -left-[150px]">
+        </div>
+      </div>
+
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <div
+          class="mb-8 inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/10 text-primary-gold border border-primary-gold/30">
+          <i class="fas fa-scroll text-3xl"></i>
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold mb-8 text-white">Confianza y <span
+            class="text-primary-gold">Compromiso</span></h2>
+        <p class="text-xl text-gray-300 leading-relaxed font-light mb-10">
+          En Asociación Alma Gentil, nos regimos por los más altos estándares de transparencia y ética. Cada colón
+          donado es administrado con absoluta responsabilidad y devoción para maximizar el impacto directo en la vida de
+          los niños costarricenses.
+        </p>
+        <div class="flex flex-wrap justify-center gap-8 text-left">
+          <div class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-primary-gold text-2xl"></i>
+            <span class="font-medium">Transparencia Total</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-primary-gold text-2xl"></i>
+            <span class="font-medium">Impacto Medible</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-primary-gold text-2xl"></i>
+            <span class="font-medium">Auditoría Anual</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary-black border-t border-white/10 text-white pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <!-- Branding -->
+        <div class="col-span-1 lg:col-span-1">
+          <img src="https://almagentil.org/assets/images/redondo.png" alt="Alma Gentil Logo" class="h-16 w-auto mb-6">
+          <p class="text-gray-300 leading-relaxed mb-6">
+            Trabajando por un futuro mejor y lleno de oportunidades para la niñez costarricense. Su apoyo es nuestra
+            fuerza.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white/10 shadow-sm border border-white/5 flex items-center justify-center text-primary-gold hover:bg-primary-gold hover:text-white transition-all duration-300">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white/10 shadow-sm border border-white/5 flex items-center justify-center text-primary-gold hover:bg-primary-gold hover:text-white transition-all duration-300">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white/10 shadow-sm border border-white/5 flex items-center justify-center text-primary-gold hover:bg-primary-gold hover:text-white transition-all duration-300">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h4 class="font-bold text-white mb-6 uppercase tracking-wider text-sm">Enlaces Rápidos</h4>
+          <ul class="space-y-4">
+            <li><a href="index.html" class="text-gray-300 hover:text-primary-gold transition-colors">Inicio</a></li>
+            <li><a href="about.html" class="text-gray-300 hover:text-primary-gold transition-colors">Quiénes Somos</a>
+            </li>
+            <li><a href="programs.html" class="text-gray-300 hover:text-primary-gold transition-colors">Nuestros
+                Programas</a></li>
+            <li><a href="donate.html" class="text-gray-300 hover:text-primary-gold transition-colors">Quiero Donar</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-span-1 lg:col-span-2">
+          <h4 class="font-bold text-white mb-6 uppercase tracking-wider text-sm">Contáctenos</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <ul class="space-y-4">
+              <li class="flex items-start gap-4">
+                <i class="fas fa-map-marker-alt text-primary-gold mt-1"></i>
+                <span class="text-gray-300">Alajuela, Costa Rica<br>Oficinas Centrales</span>
+              </li>
+              <li class="flex items-center gap-4">
+                <i class="fas fa-envelope text-primary-gold"></i>
+                <a href="mailto:contacto@almagentil.org"
+                  class="text-gray-300 hover:text-primary-gold transition-colors">contacto@almagentil.org</a>
+              </li>
+            </ul>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-4">
+                <i class="fas fa-phone text-primary-gold"></i>
+                <a href="tel:+50640347205" class="text-gray-300 hover:text-primary-gold transition-colors">+506
+                  4034-7205</a>
+              </li>
+              <li class="flex items-center gap-4">
+                <i class="fab fa-whatsapp text-primary-gold"></i>
+                <a href="https://wa.me/50670084892" class="text-gray-300 hover:text-primary-gold transition-colors">+506
+                  7008-4892</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-400 text-sm">
+          &copy; 2024 Asociación Alma Gentil. Todos los derechos reservados.
+        </p>
+        <div class="flex gap-6 text-sm">
+          <a href="#" class="text-gray-400 hover:text-primary-gold transition-colors">Políticas de Privacidad</a>
+          <a href="#" class="text-gray-400 hover:text-primary-gold transition-colors">Términos de Servicio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module">
+    // Mobile Menu Toggle Logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      const icon = btn.querySelector('i');
+
+      let isMenuOpen = false;
+
+      btn.addEventListener('click', () => {
+        isMenuOpen = !isMenuOpen;
+
+        if (isMenuOpen) {
+          menu.classList.remove('hidden');
+          // Small delay to allow display flex to apply before transition
+          setTimeout(() => {
+            menu.classList.remove('opacity-0', 'scale-y-0');
+            menu.classList.add('opacity-100', 'scale-y-100');
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+          }, 10);
+        } else {
+          menu.classList.remove('opacity-100', 'scale-y-100');
+          menu.classList.add('opacity-0', 'scale-y-0');
+          icon.classList.remove('fa-times');
+          icon.classList.add('fa-bars');
+
+          // Wait for transition to finish before hiding element
+          setTimeout(() => {
+            menu.classList.add('hidden');
+          }, 300);
+        }
+      });
+
+      // Navbar background effect on scroll
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 20) {
+          navbar.classList.add('shadow-md');
+        } else {
+          navbar.classList.remove('shadow-md');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

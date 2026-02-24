@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociación Alma Gentil - Quiénes Somos</title>
+    <meta name="description" content="Conoce la historia, misión, visión y valores de Asociación Alma Gentil.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body class="bg-warm-white text-primary-black font-sans antialiased selection:bg-primary-gold selection:text-white">
+
+    <!-- Navbar -->
+    <header
+        class="fixed w-full top-0 z-50 bg-primary-black/95 backdrop-blur-md border-b border-white/10 transition-all duration-300"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/" class="flex items-center gap-3 group">
+                        <img src="/assets/images/redondo.png" alt="Alma Gentil Logo"
+                            class="h-12 w-auto transition-transform duration-300 group-hover:scale-105">
+                        <span class="font-bold text-xl tracking-tight hidden sm:block text-white">Alma Gentil</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html"
+                        class="text-gray-300 hover:text-primary-gold font-medium transition-colors">Inicio</a>
+                    <a href="about.html" class="text-primary-gold font-semibold transition-colors">Quiénes Somos</a>
+                    <a href="programs.html"
+                        class="text-gray-300 hover:text-primary-gold font-medium transition-colors">Programas</a>
+                    <a href="donate.html"
+                        class="px-5 py-2.5 rounded-full bg-primary-gold text-white font-semibold hover:bg-yellow-600 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">Donar</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-btn"
+                        class="text-gray-300 hover:text-primary-gold focus:outline-none p-2" aria-label="Abrir menú">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-primary-black border-t border-white/10 shadow-xl absolute w-full left-0 origin-top transform transition-all duration-300 opacity-0 scale-y-0">
+            <div class="px-4 py-4 space-y-3 flex flex-col">
+                <a href="index.html"
+                    class="block px-3 py-2 text-gray-300 hover:text-primary-gold font-medium hover:bg-white/5 rounded-lg transition-colors">Inicio</a>
+                <a href="about.html" class="block px-3 py-2 text-primary-gold font-medium bg-white/5 rounded-lg">Quiénes
+                    Somos</a>
+                <a href="programs.html"
+                    class="block px-3 py-2 text-gray-300 hover:text-primary-gold font-medium hover:bg-white/5 rounded-lg transition-colors">Programas</a>
+                <a href="donate.html"
+                    class="block px-3 py-3 text-center rounded-lg bg-primary-gold text-white font-semibold hover:bg-yellow-600 transition-colors mt-4">Donar
+                    Ahora</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Page Header -->
+        <section class="bg-primary-black text-white py-24 md:py-32 relative overflow-hidden">
+            <!-- Background element -->
+            <div class="absolute inset-0 opacity-10">
+                <div
+                    class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full border-[40px] border-primary-gold mix-blend-overlay">
+                </div>
+            </div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 animate-fade-in-up">
+                <span class="text-primary-gold font-bold tracking-widest uppercase text-sm mb-4 block">Nuestra
+                    Esencia</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Quiénes <span
+                        class="text-primary-gold">Somos</span></h1>
+                <p class="text-xl md:text-2xl text-gray-300 font-light max-w-2xl mx-auto leading-relaxed">
+                    Conoce la historia, los valores y el inmenso corazón que impulsa nuestra organización día con día.
+                </p>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="py-20 bg-warm-white -mt-10 relative z-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                    <!-- Mission -->
+                    <div
+                        class="bg-white rounded-2xl p-8 md:p-12 shadow-xl border-l-4 border-primary-gold hover:-translate-y-2 transition-transform duration-300">
+                        <div
+                            class="w-16 h-16 bg-primary-gold/10 rounded-full flex items-center justify-center mb-6 text-primary-gold">
+                            <i class="fas fa-bullseye text-3xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4 text-primary-black">Nuestra Misión</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed font-light">
+                            Mejorar activamente la calidad de vida de niños en situación de vulnerabilidad en Costa
+                            Rica, proporcionando alimentación de calidad, apoyo educativo continuo y herramientas
+                            vitales para su desarrollo integral emocional y cognitivo.
+                        </p>
+                    </div>
+                    <!-- Vision -->
+                    <div
+                        class="bg-white rounded-2xl p-8 md:p-12 shadow-xl border-l-4 border-primary-gold hover:-translate-y-2 transition-transform duration-300">
+                        <div
+                            class="w-16 h-16 bg-primary-gold/10 rounded-full flex items-center justify-center mb-6 text-primary-gold">
+                            <i class="fas fa-eye text-3xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4 text-primary-black">Nuestra Visión</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed font-light">
+                            Ser un referente nacional de esperanza y transformación social, construyendo de manera
+                            sostenible un futuro brillante donde cada niño, sin importar su origen, tenga la oportunidad
+                            real de alcanzar su máximo potencial.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Historia -->
+        <section class="py-20 bg-light-cream relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <span class="text-primary-gold font-bold tracking-widest uppercase text-sm mb-4 block">Nuestro
+                            Origen</span>
+                        <h2 class="text-3xl md:text-5xl font-bold mb-8">Nuestra Historia</h2>
+                        <div class="space-y-6 text-lg text-gray-600 font-light leading-relaxed">
+                            <p>
+                                Asociación Alma Gentil nació del deseo profundo e inquebrantable de un grupo de
+                                voluntarios costarricenses por hacer una diferencia tangible en las comunidades más
+                                necesitadas.
+                            </p>
+                            <p>
+                                Lo que comenzó como una pequeña iniciativa de recolección de víveres en el año 2020, se
+                                ha transformado en una organización completamente formal que impacta directamente en la
+                                vida de cientos de niños semana a semana.
+                            </p>
+                            <p>
+                                Nuestros fundadores vieron de primera mano las severas dificultades que muchos
+                                estudiantes enfrentaban para asistir a clases sin haber comido, y decidieron actuar.
+                                Hoy, gracias al inmenso apoyo de donantes individuales y empresas aliadas, hemos
+                                ampliado significativamente nuestro alcance operativo para incluir no solo alimentación
+                                diaria, sino también tutorías, programas de becas escolares y apoyo psicológico
+                                esencial.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="absolute inset-0 bg-primary-gold rounded-3xl transform rotate-6 scale-105 opacity-20 blur-sm">
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                            alt="Comunidad unida" class="relative rounded-2xl shadow-2xl object-cover w-full h-[500px]">
+                        <div
+                            class="absolute -bottom-10 -left-10 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block animate-bounce-slow">
+                            <p class="text-5xl font-bold text-primary-gold mb-1">+4</p>
+                            <p class="text-gray-600 font-medium">Años transformando vidas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Valores -->
+        <section class="py-24 bg-white text-center">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-5xl font-bold mb-16">Nuestros <span class="text-primary-gold">Valores</span>
+                </h2>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <div
+                        class="bg-primary-black text-white px-8 py-4 rounded-full text-lg font-medium tracking-wide shadow-lg border-2 border-primary-black hover:bg-transparent hover:text-primary-black transition-colors duration-300">
+                        <i class="fas fa-hands-helping text-primary-gold mr-2"></i> Solidaridad
+                    </div>
+                    <div
+                        class="bg-primary-black text-white px-8 py-4 rounded-full text-lg font-medium tracking-wide shadow-lg border-2 border-primary-black hover:bg-transparent hover:text-primary-black transition-colors duration-300">
+                        <i class="fas fa-search text-primary-gold mr-2"></i> Transparencia
+                    </div>
+                    <div
+                        class="bg-primary-black text-white px-8 py-4 rounded-full text-lg font-medium tracking-wide shadow-lg border-2 border-primary-black hover:bg-transparent hover:text-primary-black transition-colors duration-300">
+                        <i class="fas fa-heart text-primary-gold mr-2"></i> Empatía
+                    </div>
+                    <div
+                        class="bg-primary-black text-white px-8 py-4 rounded-full text-lg font-medium tracking-wide shadow-lg border-2 border-primary-black hover:bg-transparent hover:text-primary-black transition-colors duration-300">
+                        <i class="fas fa-handshake text-primary-gold mr-2"></i> Compromiso
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-black border-t border-white/10 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Branding -->
+                <div class="col-span-1 lg:col-span-1">
+                    <img src="/assets/images/redondo.png" alt="Alma Gentil Logo" class="h-16 w-auto mb-6">
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Trabajando por un futuro mejor y lleno de oportunidades para la niñez costarricense. Su apoyo es
+                        nuestra fuerza.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 shadow-sm border border-white/5 flex items-center justify-center text-primary-gold hover:bg-primary-gold hover:text-white transition-all duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 shadow-sm border border-white/5 flex items-center justify-center text-primary-gold hover:bg-primary-gold hover:text-white transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 shadow-sm border border-white/5 flex items-center justify-center text-primary-gold hover:bg-primary-gold hover:text-white transition-all duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="font-bold text-white mb-6 uppercase tracking-wider text-sm">Enlaces Rápidos</h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html"
+                                class="text-gray-300 hover:text-primary-gold transition-colors">Inicio</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-primary-gold transition-colors">Quiénes
+                                Somos</a></li>
+                        <li><a href="programs.html"
+                                class="text-gray-300 hover:text-primary-gold transition-colors">Nuestros Programas</a>
+                        </li>
+                        <li><a href="donate.html" class="text-gray-300 hover:text-primary-gold transition-colors">Quiero
+                                Donar</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-span-1 lg:col-span-2">
+                    <h4 class="font-bold text-white mb-6 uppercase tracking-wider text-sm">Contáctenos</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-4">
+                                <i class="fas fa-map-marker-alt text-primary-gold mt-1"></i>
+                                <span class="text-gray-300">Alajuela, Costa Rica<br>Oficinas Centrales</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <i class="fas fa-envelope text-primary-gold"></i>
+                                <a href="mailto:contacto@almagentil.org"
+                                    class="text-gray-300 hover:text-primary-gold transition-colors">contacto@almagentil.org</a>
+                            </li>
+                        </ul>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-4">
+                                <i class="fas fa-phone text-primary-gold"></i>
+                                <a href="tel:+50640347205"
+                                    class="text-gray-300 hover:text-primary-gold transition-colors">+506 4034-7205</a>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <i class="fab fa-whatsapp text-primary-gold"></i>
+                                <a href="https://wa.me/50670084892"
+                                    class="text-gray-300 hover:text-primary-gold transition-colors">+506 7008-4892</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2024 Asociación Alma Gentil. Todos los derechos reservados.
+                </p>
+                <div class="flex gap-6 text-sm">
+                    <a href="#" class="text-gray-400 hover:text-primary-gold transition-colors">Políticas de
+                        Privacidad</a>
+                    <a href="#" class="text-gray-400 hover:text-primary-gold transition-colors">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module">
+        // Mobile Menu Toggle Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const icon = btn.querySelector('i');
+
+            let isMenuOpen = false;
+
+            btn.addEventListener('click', () => {
+                isMenuOpen = !isMenuOpen;
+
+                if (isMenuOpen) {
+                    menu.classList.remove('hidden');
+                    // Small delay to allow display flex to apply before transition
+                    setTimeout(() => {
+                        menu.classList.remove('opacity-0', 'scale-y-0');
+                        menu.classList.add('opacity-100', 'scale-y-100');
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    }, 10);
+                } else {
+                    menu.classList.remove('opacity-100', 'scale-y-100');
+                    menu.classList.add('opacity-0', 'scale-y-0');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+
+                    // Wait for transition to finish before hiding element
+                    setTimeout(() => {
+                        menu.classList.add('hidden');
+                    }, 300);
+                }
+            });
+
+            // Navbar background effect on scroll
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    navbar.classList.add('shadow-md');
+                } else {
+                    navbar.classList.remove('shadow-md');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
